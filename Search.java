@@ -1,5 +1,12 @@
 public class Search {
 
+    /**
+     * Performs a binary search on the given sorted array to find the target element.
+     *
+     * @param  sortedArray  the array to be searched
+     * @param  target       the element to be found
+     * @return             the index of the target element if found, -1 otherwise
+     */
     public static int binarySearch(int[] sortedArray, int target) {
         int left = 0;
         int right = sortedArray.length - 1;
@@ -19,9 +26,10 @@ public class Search {
         return -1; 
     }
 
+    
     public static void main(String[] args) {
         int[] data = {3, 8, 15, 17, 22, 36, 45}; 
-        int target = 22; 
+        int target = 15; 
 
         int resultIndex = binarySearch(data, target);
         if (resultIndex == -1) {
